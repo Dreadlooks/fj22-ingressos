@@ -7,6 +7,9 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import java.util.List;
 
+import org.springframework.stereotype.Repository;
+
+@Repository
 public class SessaoDao {
     @PersistenceContext
     private EntityManager manager;
