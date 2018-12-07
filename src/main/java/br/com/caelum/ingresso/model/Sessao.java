@@ -1,15 +1,17 @@
 package br.com.caelum.ingresso.model;
 
+import java.time.LocalTime;
+
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
-import java.time.LocalTime;
 
+@Entity
 public class Sessao {
 	@Id
 	@GeneratedValue
 	private Integer id;
-
 	private LocalTime horario;
 
 	@ManyToOne
@@ -17,10 +19,12 @@ public class Sessao {
 	@ManyToOne
 	private Filme filme;
 
+	public Sessao() {} 
+	
 	public Sessao(LocalTime horario, Sala sala, Filme filme) {
 		this.horario = horario;
 		this.sala = sala;
-		this.filme = (filme);
+		this.filme = filme;
 	}
 
 
