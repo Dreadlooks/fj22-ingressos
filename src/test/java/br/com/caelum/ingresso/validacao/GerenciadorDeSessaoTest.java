@@ -1,5 +1,6 @@
 package br.com.caelum.ingresso.validacao;
 
+import java.math.BigDecimal;
 import java.time.Duration;
 import java.time.LocalTime;
 import java.util.Arrays;
@@ -22,7 +23,7 @@ public class GerenciadorDeSessaoTest {
 
 	@Before
 	public void setUp(){
-		this.filme = new Filme("Bohemian Rhapsody", Duration.ofMinutes(120), "Drama");
+		this.filme = new Filme("Bohemian Rhapsody", Duration.ofMinutes(120), "Drama", BigDecimal.TEN);
 		this.sala = new Sala("Sala 15");
 		
 		this.sessaoDasDez = new Sessao(LocalTime.parse("10:00:00"), sala, filme);
