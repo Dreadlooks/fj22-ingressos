@@ -5,5 +5,6 @@ import java.math.BigDecimal;
 import br.com.caelum.ingresso.model.Sessao;
 
 public interface Desconto {
-	BigDecimal aplica(Sessao sessao);
+	BigDecimal aplica(BigDecimal valor);
+	String getDescricao();
 }

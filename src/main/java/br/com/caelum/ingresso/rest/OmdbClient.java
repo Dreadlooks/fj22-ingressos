@@ -6,7 +6,6 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestClientException;
 import org.springframework.web.client.RestTemplate;
 
-import br.com.caelum.ingresso.model.DetalhesFilme;
 import br.com.caelum.ingresso.model.Filme;
 
 @Component

@@ -4,7 +4,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class ImagemCapa {
 	@JsonProperty("Poster")
-	private String url;
+	String url;
 
 	public String getUrl() {
 		return url;
