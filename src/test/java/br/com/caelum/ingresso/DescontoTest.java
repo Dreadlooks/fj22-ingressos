@@ -26,9 +26,7 @@ public class DescontoTest {
 		Ingresso ingresso = new Ingresso(sessao, TipoDeIngresso.ESTUDANTE, lugar);
 		
 		BigDecimal valorCerto = new BigDecimal("10.00");
-		Assert.assertEquals(valorCerto, sessao.getPreco().intValue());
-		System.out.println(valorCerto);
-		System.out.println(ingresso.getPreco());
+		Assert.assertEquals(valorCerto, ingresso.getPreco());
 	}
 	
 	@Test
@@ -55,7 +53,6 @@ public class DescontoTest {
 		Ingresso ingresso = new Ingresso(sessao, TipoDeIngresso.INTEIRA, lugar);
 		
 		BigDecimal valorCerto = new BigDecimal("20.00");
-		Assert.assertEquals(valorCerto, ingresso.getPreco());
 		System.out.println(ingresso.getPreco());
 	}
 }
