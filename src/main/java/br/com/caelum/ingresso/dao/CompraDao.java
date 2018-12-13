@@ -15,4 +15,5 @@ public class CompraDao {
         manager.persist(compra);
     }
 
+
 }
